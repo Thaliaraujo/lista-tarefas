@@ -78,6 +78,7 @@ body {
   outline: none;
   border-radius: 2px;
   cursor: pointer;
+  padding-right: 0.5rem;
 }
 
 .task.done .check-button {
