@@ -68,7 +68,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 0.5rem;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
 }
 
 .check-button, .delete-button {
@@ -78,7 +78,10 @@ body {
   outline: none;
   border-radius: 2px;
   cursor: pointer;
-  padding-right: 0.5rem;
+}
+
+.check-button{
+  margin-right: 1rem;
 }
 
 .task.done .check-button {
