@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #606C5D;
+  font-family: "Space Mono", monospace;
+  padding: 1rem;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+.container__title{
+  border-bottom: 1px solid rgba(246, 241, 209, 0.5);
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "BioRhyme", serif;
+  color: #C1D0B5;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container__form{
+  display: flex;
+  justify-content: center;
+}
+.container__form__input, .container__form__button {
+  border-radius: 0;
+  padding: 0.75rem;
+  font-size: 0.75rem;
+}
+.container__form__input {
+  outline: none;
+  background-color: #C1D0B5;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.container__form__button {
+  border: 1px;
+  background: #C1D0B5;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 0.25rem;
+  color: #606C5D;
+  font-weight: 600;
+}
+.container__form__button:hover {
+  color: #C1D0B5;
+  background: rgba(246, 241, 209, 0.1);
+}
+
+.container__list {
+  padding: 0;
+  list-style: none;
+  width: 100%;
+}
+
+.task {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #C1D0B5;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  padding: 1rem 3rem;
+}
+
+.check-button, .delete-button {
+  background-color: #C1D0B5;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.task.done .check-button {
+  background-color: #606C5D;
+  color: #C1D0B5;
+}
+
+.check-icon {
+  display: block;
+  padding: 1px;
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.task.done .check-icon {
+  background-color: #606C5D;
+}
+
+.content {
+  margin: 0;
+}
+
+.task.done .content {
+  text-decoration: line-through;
+}
+
+@media screen and (min-width: 1200px) {
+  .container{
+    min-width: 600px;
+    min-height: 600px;
+  }
+
+  .container__title{
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  .container__form__input {
+    width: 60%;
+    font-size: 1.2rem;
+  }
+  
+  .container__form__button{
+    width: 30%;
+    font-size: 1rem;
+  }
+
+  .task {
+    font-size: 1.2rem;
+  }
+  
+  .check-button, .delete-button {
+    font-size: 1rem;
+  }
+}
